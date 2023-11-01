@@ -21,6 +21,7 @@
 	"type": "module",
 	"dependencies": {
 		"@google-cloud/local-auth": "^2.1.0",
+		"docx-templates": "^4.11.3",
 		"googleapis": "^105.0.0",
 		"typings": "^2.1.1"
 	}
