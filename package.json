@@ -13,10 +13,12 @@
 		"@skeletonlabs/skeleton": "^2.4.0",
 		"@skeletonlabs/tw-plugin": "^0.2.3",
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-node": "^1.3.1",
 		"@sveltejs/kit": "^1.20.4",
 		"@tailwindcss/forms": "^0.5.6",
 		"@types/node": "^20.8.10",
 		"autoprefixer": "^10.4.16",
+		"docx-templates": "^4.11.3",
 		"postcss": "^8.4.31",
 		"svelte": "^4.0.5",
 		"svelte-check": "^3.4.3",
@@ -25,11 +27,5 @@
 		"typescript": "^5.0.0",
 		"vite": "^4.4.2"
 	},
-	"type": "module",
-	"dependencies": {
-		"@google-cloud/local-auth": "^2.1.0",
-		"docx-templates": "^4.11.3",
-		"googleapis": "^105.0.0",
-		"typings": "^2.1.1"
-	}
+	"type": "module"
 }
