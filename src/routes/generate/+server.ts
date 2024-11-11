@@ -23,7 +23,7 @@ export async function GET({ url }) {
     if (day !== 0 && day !== 6 && day !== 3 && !isHoliday(date, 'NW')) {
       // dates.push({ name: date.toLocaleDateString("de-DE"), fridayXML: day === 5 ? '||<w:tcPr><w:shd w:val="clear" w:color="auto" w:fill="DECFFC" /></w:tcPr>||' : '' });
       dates.push({
-        name: date.toLocaleDateString("de-DE"), isCrossedOut: day === 2,
+        name: date.toLocaleDateString("de-DE"), crossedOut: day === 2,
       });
     }
     date.setDate(date.getDate() + 1);
