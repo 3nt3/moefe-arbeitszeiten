@@ -1,6 +1,7 @@
 import createReport from 'docx-templates';
 import fs from 'fs';
 import { exec } from 'child_process';
+import { isHoliday } from 'feiertagejs';
 
 const months = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli",
   "August", "September", "Oktober", "November", "Dezember"];
@@ -19,10 +20,10 @@ export async function GET({ url }) {
   const date = new Date(year, month, 1);
   while (date.getMonth() === month) {
     const day = date.getDay();
-    if (day !== 0 && day !== 6) {
+    if (day !== 0 && day !== 6 && day !== 3 && !isHoliday(date, 'NW')) {
       // dates.push({ name: date.toLocaleDateString("de-DE"), fridayXML: day === 5 ? '||<w:tcPr><w:shd w:val="clear" w:color="auto" w:fill="DECFFC" /></w:tcPr>||' : '' });
       dates.push({
-        name: date.toLocaleDateString("de-DE"), isFriday: day === 5
+        name: date.toLocaleDateString("de-DE"), isCrossedOut: day === 2,
       });
     }
     date.setDate(date.getDate() + 1);

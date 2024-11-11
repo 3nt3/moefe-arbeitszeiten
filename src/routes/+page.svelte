@@ -83,7 +83,7 @@
     </div>
 
     <div class="absolute bottom-0 p-4">
-      Made with ❤️ by <a href="https://3nt3.de">Nia</a> for 🐦
+      Made with ❤️ by <a href="https://3nt3.de">Nia</a> for Leo
     </div>
   </div>
 </main>
